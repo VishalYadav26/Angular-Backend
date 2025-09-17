@@ -10,7 +10,8 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // MongoDB connection
-mongoose.connect("mongodb://127.0.0.1:27017/bookfair")
+// mongoose.connect("mongodb://127.0.0.1:27017/bookfair")
+mongoose.connect("mongodb+srv://Vishal123:Vishal123@cluster0.sk16fw3.mongodb.net/bookfair?retryWrites=true&w=majority&appName=Cluster0")
   .then(() => console.log("✅ MongoDB connected"))
   .catch((err) => console.error("❌ DB connection error:", err));
 
